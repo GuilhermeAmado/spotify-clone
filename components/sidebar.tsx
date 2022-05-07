@@ -7,8 +7,6 @@ import {
   Center,
   LinkBox,
   LinkOverlay,
-  Link,
-  Text,
 } from "@chakra-ui/react";
 import { FiHome, FiSearch, FiPlus, FiHeart } from "react-icons/fi";
 import { VscLibrary } from "react-icons/vsc";
@@ -60,7 +58,13 @@ const Sidebar = () => {
     >
       <Box paddingY="20px">
         <Box marginBottom="30px" paddingX="20px">
-          <NextImage src="/logo.png" height={50} width={165} />
+          <NextImage
+            src="/logo.svg"
+            layout="fixed"
+            width={150}
+            height={45}
+            priority
+          />
         </Box>
         <Box marginBottom="40px">
           <List spacing={4}>
